@@ -1,14 +1,8 @@
-// components/TranslationWrapper.tsx
-
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 
-interface TranslationWrapperProps {
-  children: React.ReactNode;
-}
-
-const TranslationWrapper: React.FC<TranslationWrapperProps> = ({ children }) => {
-  const { i18n } = useTranslation();
+const TranslationWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { i18n, t } = useTranslation();
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -16,6 +10,8 @@ const TranslationWrapper: React.FC<TranslationWrapperProps> = ({ children }) => 
       if (!i18n.isInitialized) {
         await i18n.init();
       }
+      // Force reload of resources
+      await i18n.reloadResources();
       setIsLoaded(true);
     };
 
@@ -26,13 +22,12 @@ const TranslationWrapper: React.FC<TranslationWrapperProps> = ({ children }) => 
     if (isLoaded) {
       console.log('Translations loaded. Current language:', i18n.language);
       console.log('Available namespaces:', Object.keys(i18n.store.data[i18n.language] || {}));
+      console.log('Sample translation:', t('welcome'));
+      console.log('All translations:', i18n.store.data);
     }
-  }, [isLoaded, i18n]);
+  }, [isLoaded, i18n, t]);
 
-  if (!isLoaded) {
-    // You can replace this with a loading spinner or any other loading indicator
-    return <div>Loading translations...</div>;
-  }
+  if (!isLoaded) return <div>Loading translations...</div>;
 
   return <>{children}</>;
 };

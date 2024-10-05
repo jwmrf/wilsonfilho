@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import TranslationWrapper from '../components/TranslationWrapper';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  console.log('App props:', pageProps);
   return (
     <TranslationWrapper>
     <div className="flex flex-col min-h-screen">

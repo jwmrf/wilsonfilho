@@ -58,7 +58,7 @@ export default function Home({ posts, githubProfileImage }: HomeProps) {
   return (
     <div className="container mx-auto px-6 py-8">
       <div className="flex flex-col md:flex-row justify-between items-start mb-12">
-        <h1 className="text-4xl font-bold mb-4 md:mb-0">{t('welcome')}</h1>
+        <h1 className="text-4xl font-bold mb-4 md:mb-0">{t('welcome', 'Welcome')}</h1>
         <div className="w-full md:w-1/2 flex items-center">
           {githubProfileImage ? (
             <Image
