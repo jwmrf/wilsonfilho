@@ -28,7 +28,7 @@ const Header = () => {
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center">
                 <Link href="/" className="flex-shrink-0">
-                  <span className="text-white text-xl font-bold">{t('name')}</span>
+                  <span className="text-white text-xl font-bold">{t('name', 'Wilson Filho')}</span>
                 </Link>
                 <div className="hidden md:flex md:ml-4">
                   {socialLinks.map((link) => (

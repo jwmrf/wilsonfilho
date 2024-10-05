@@ -58,7 +58,7 @@ export default function Home({ posts, githubProfileImage }: HomeProps) {
   return (
     <div className="container mx-auto px-6 py-8">
       <div className="flex flex-col md:flex-row justify-between items-start mb-12">
-        <h1 className="text-4xl font-bold mb-4 md:mb-0">{t('welcome', 'Welcome')}</h1>
+        <h1 className="text-4xl font-bold mb-4 md:mb-0">{t('welcome', 'Welcome to my site')}</h1>
         <div className="w-full md:w-1/2 flex items-center">
           {githubProfileImage ? (
             <Image
@@ -72,11 +72,11 @@ export default function Home({ posts, githubProfileImage }: HomeProps) {
             <div className="w-24 h-24 bg-gray-300 rounded-full mr-4"></div>
           )}
           <div>
-            <h2 className="text-2xl font-semibold">{t('your_name')}</h2>
-            <p className="text-gray-600">{t('your_title')}</p>
-            <p className="text-gray-700 mt-2">{t('about_short_description')}</p>
+            <h2 className="text-2xl font-semibold">{t('your_name', 'Wilson Filho')}</h2>
+            <p className="text-gray-600">{t('your_title', 'Software Engineer')}</p>
+            <p className="text-gray-700 mt-2">{t('about_short_description', 'Developer with over 5 years of experience, starting my professional journey in 2018. Specialized in full stack web development, with solid experience in mobile Android development.')}</p>
             <Link href="/sobre" className="text-blue-600 hover:underline mt-2 inline-block">
-              {t('read_more_about')}
+              {t('read_more_about', 'Read more about me')}
             </Link>
           </div>
         </div>
