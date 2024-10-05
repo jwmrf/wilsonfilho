@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 
 const TranslationWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { i18n, t } = useTranslation();
+  const { i18n, t } = useTranslation('common');
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
