@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -8,7 +7,6 @@ import { HiMenu, HiX } from 'react-icons/hi';
 
 const Header = () => {
   const { t } = useTranslation('common');
-  const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
     { name: t('home'), href: '/' },
