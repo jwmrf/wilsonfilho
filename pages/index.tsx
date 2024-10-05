@@ -5,6 +5,7 @@ import { getMediumPosts } from '../utils/mediumApi';
 import { getGithubProfileImage } from '../utils/githubApi';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useEffect } from 'react'
 
 interface HomeProps {
   posts: {
@@ -25,6 +26,15 @@ interface Project {
 
 export default function Home({ posts, githubProfileImage }: HomeProps) {
   const { t } = useTranslation('common');
+  const { i18n } = useTranslation('common');
+
+  useEffect(() => {
+    const loadTranslations = async () => {
+      await i18n.reloadResources()
+      i18n.changeLanguage(i18n.language)
+    }
+    loadTranslations()
+  }, [i18n])
 
   // Exemplo de projetos (você pode substituir isso por dados reais)
   const projects: Project[] = [
