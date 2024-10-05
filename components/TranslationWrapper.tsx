@@ -24,6 +24,7 @@ const TranslationWrapper: React.FC<{ children: React.ReactNode }> = ({ children 
       console.log('Available namespaces:', Object.keys(i18n.store.data[i18n.language] || {}));
       console.log('Sample translation:', t('welcome'));
       console.log('All translations:', i18n.store.data);
+      console.log('i18n:', i18n);
     }
   }, [isLoaded, i18n, t]);
 
