@@ -147,6 +147,6 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
       posts,
       githubProfileImage,
     },
-    revalidate: 1, // Revalidate every hour
+    revalidate: 3600, // Revalidate every hour
   };
 };
