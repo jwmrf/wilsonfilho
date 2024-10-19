@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      <title>Wilson Filho</title>
       <body className="antialiased">
         <Main />
         <NextScript />
