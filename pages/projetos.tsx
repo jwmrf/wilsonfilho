@@ -7,7 +7,7 @@ export default function Projetos() {
 
   return (
     <div className="container mx-auto px-6 py-8">
-      <h1 className="text-4xl font-bold mb-8">{t('projects')}</h1>
+      {/* <h1 className="text-4xl font-bold mb-8">{t('projects')}</h1>
       <ul>
         <li className="mb-4">
           <h2 className="text-2xl font-semibold">{t('project1_title')}</h2>
@@ -17,7 +17,7 @@ export default function Projetos() {
           <h2 className="text-2xl font-semibold">{t('project2_title')}</h2>
           <p>{t('project2_description')}</p>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 }
