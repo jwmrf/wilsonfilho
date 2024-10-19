@@ -1,9 +1,9 @@
 import { GetStaticProps } from 'next';
-import { useTranslation } from 'next-i18next';
+// import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function Projetos() {
-  const { t } = useTranslation('common');
+  // const { t } = useTranslation('common');
 
   return (
     <div className="container mx-auto px-6 py-8">
