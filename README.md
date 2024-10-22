@@ -1,6 +1,6 @@
 # Meu Portfólio - Wilson Filho
 
-Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido utilizando **Next.js**, com o objetivo de apresentar os meus trabalhos, experiência e postagens recentes no Medium.
+Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido utilizando **Next.js**, com o objetivo de apresentar os meus trabalhos, experiência e postagens recentes no Medium, os posts são carregados diretamente da api do Medium, minha foto do perfil também é chamada diretamente do perfil do github.
 
 #### Acesse: https://wilsonfilho.site
 
