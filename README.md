@@ -2,6 +2,8 @@
 
 Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido utilizando **Next.js**, com o objetivo de apresentar os meus trabalhos, experiência e postagens recentes no Medium.
 
+#### Acesse: https://wilsonfilho.site
+
 ![image](https://github.com/user-attachments/assets/affa5bb8-32af-4dc0-92f7-de0a220debfa)
 
 
@@ -32,4 +34,4 @@ Este site tem a função de demonstrar minhas habilidades como desenvolvedor ful
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/jwmrf/wilsonfilho.git
