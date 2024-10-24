@@ -31,7 +31,7 @@ export default function Projetos() {
 
   return (
     <div className="container mx-auto px-6 py-8">
-              <div className="w-full md:w-1/2">
+              <div className="w-full">
           <h2 className="text-2xl font-semibold mb-4">{t('projects')}</h2>
           <ul className="space-y-6">
             {projects.map((project, index) => (
@@ -56,11 +56,6 @@ export default function Projetos() {
               </li>
             ))}
           </ul>
-          <div className="mt-6">
-            <Link href="/projetos" className="text-blue-600 hover:underline">
-              {t('view_all_projects')}
-            </Link>
-          </div>
         </div>
       {/* <h1 className="text-4xl font-bold mb-8">{t('projects')}</h1>
       <ul>
