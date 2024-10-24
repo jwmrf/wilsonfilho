@@ -37,7 +37,7 @@ export default function Home({ posts, githubProfileImage }: HomeProps) {
     loadTranslations();
   }, [i18n]);
 
-  // Exemplo de projetos com a propriedade 'image'
+
   const projects: Project[] = [
     {
       title: "Url Tech Scraper",
